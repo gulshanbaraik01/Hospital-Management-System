@@ -1,0 +1,40 @@
+{% extends 'navigationbar.html' %}
+{% load static %}
+{% block body %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/about.css' %}">
+
+<div class="container" style="margin-top: 50px;">
+<h2 class="text-center" style="font-weight: bold;">Contact Us</h2>
+<div class="bg">
+    
+        <div id="promo">
+            <div class="jumbotron">
+            	<h1 style="font: normal 50px Cookie,cursive; color:blue;">Welcome To Contact Us Page
+                </h1><hr>
+            	<div class="mydivstyle">
+				<h4><i class="fas fa-phone-square"></i> Contact</h4>
+				<p class="mt-3 font-weight-bold"><a class="text-danger" href="tel:+91 9638527410">+91 9638527410<hr class="rounded"></a></p></div>
+				<br><br>
+				<div class="mydivstyle">
+				<h4><i class="fas fa-envelope"></i> Send Email</h4>
+				<p class="mt-3 font-weight-bold"><a class="text-danger" href="mailto:gbrnc28@gmail.com">gbrnc28@gmail.com <hr class="rounded"></a></p></div>
+				<br><br>
+				<div class="mydivstyle">
+				<h4><i class="fas fa-address-card"></i> Office Address</h4>
+				<p class="mt-3 font-weight-bold"><a class="text-danger" href="http://map.google.com/maps?q=NIT+Jamshedpur">NIT Jamshedpur <hr class="rounded"></a></p></div>
+				<br><br>
+				<div class="mydivstyle">
+				<h4><i class="far fa-clock"></i> Office Timing</h4>
+				<p class="mt-3 font-weight-bold text-danger">09:00 AM to 06:00 PM<hr class="rounded"></p></div>
+
+                <br>
+                <p class="line" style="font: normal 70px Cookie,cursive; font-size:30px; color:rgb(58, 102, 8);">" Better Care and Better Understanding "</p>
+            </div><br><br>
+        </div>
+
+    </div>
+    <br>
+    <br>
+</div>
+
+{% endblock %}
