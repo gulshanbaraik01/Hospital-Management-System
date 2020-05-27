@@ -6,6 +6,9 @@ from .models import *
 
 # Create your views here.
 
+def Home(request):
+    return render(request, "home.html")
+
 
 def About(request):
     return render(request, "about.html")
@@ -35,9 +38,9 @@ def Index(request):
     for i in appointments:
         a += 1
 
-    dict1 = {'d':d,
-             'p':p,
-             'a':a}
+    dict1 = {'d': d,
+             'p': p,
+             'a': a}
     return render(request, "index.html", dict1)
 
 

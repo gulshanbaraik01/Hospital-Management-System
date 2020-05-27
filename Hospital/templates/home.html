@@ -1,0 +1,114 @@
+{% extends 'navigationbar.html' %}
+{% load static %}
+{% block body %}
+
+<style>
+	.mydiv{
+		height: 600px;
+		max-width: 100%;
+	}
+	.mydiv p{
+		color: green;
+	}
+	.mydiv h5{
+		color: orange;
+	}
+	#carouselExampleIndicators, #code{
+		box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);
+	}
+	.foot{
+		font-weight: bold;
+		font-family: cursive;
+	}
+</style>
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/about.css' %}">
+
+<div class="container" style="margin-top: 50px;">
+<h2 class="text-center" style="font-weight: bold;">Welcome To Hospital Management System</h2><br>
+<div class="bg">
+    
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+	  <ol class="carousel-indicators">
+	    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+	    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+	    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+	    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+	  </ol>
+	  <div class="carousel-inner mydiv">
+	    <div class="carousel-item active">
+	      <img class="d-block w-100" src="{% static 'images/Hospital1.jpg' %}" alt="First slide">
+	      <div class="carousel-caption d-none d-md-block">
+		    <h5>Hospital Management</h5>
+		    <p>A Passion for Better Medicine.</p>
+		  </div>
+	    </div>
+	    <div class="carousel-item mydiv">
+	      <img class="d-block w-100" src="{% static 'images/Hospital2.jpg' %}" alt="Second slide">
+	      <div class="carousel-caption d-none d-md-block">
+		    <h5>Hospital Management</h5>
+		    <p>Advanced Medicine, Trusted Care.</p>
+		  </div>
+	    </div>
+	    <div class="carousel-item mydiv">
+	      <img class="d-block w-100" src="{% static 'images/Hospital3.jpg' %}" alt="Third slide">
+	      <div class="carousel-caption d-none d-md-block">
+		    <h5>Hospital Management</h5>
+		    <p>Caring for the growing needs of our community.</p>
+		  </div>
+	    </div>
+	    <div class="carousel-item mydiv">
+	      <img class="d-block w-100" src="{% static 'images/Hospital4.jpg' %}" alt="Third slide">
+	      <div class="carousel-caption d-none d-md-block">
+		    <h5>Hospital Management</h5>
+		    <p>Compassionate Care, Advanced Medicine, Close to Home.</p>
+		  </div>
+	    </div>
+	  </div>
+	  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	    <span class="sr-only">Previous</span>
+	  </a>
+	  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	    <span class="sr-only">Next</span>
+	  </a>
+	</div>
+</div>
+<br>
+<div class="container" id="code" style="background-color: black;">
+
+<pre>
+<code class="lang-py" style=" color: white;">
+	//This site is built using Django - Configuring the our site URL<br>
+	"""mysite URL Configuration
+
+	[...]
+	"""<br>
+	from django.contrib import admin
+	from django.urls import path
+
+	urlpatterns = [
+	    path('admin/', admin.site.urls),
+	]
+</code>
+</pre>
+</div>
+
+<!-- Copyright -->
+				<div class="footer-copyright text-center py-3 foot">
+					Copyright @ 2020 Hospital Management Pvt. Ltd.
+					<br>
+					All rights reserved
+					<br>
+					<br>
+					<u><a href="#" style="color:black;"> Privacy policy</a></u> &nbsp; |
+					&nbsp; <u><a href="#" style="color:black;">Terms of service</a></u> &nbsp; |
+					&nbsp;<u><a href="#" style="color:black;">Service Agreement</a></u> &nbsp;|
+					&nbsp;<u><a href="#" style="color:black;">Contact us</a> </u> 
+				</div>
+				<br>
+				<br>
+			<!-- Copyright -->
+
+{% endblock %}

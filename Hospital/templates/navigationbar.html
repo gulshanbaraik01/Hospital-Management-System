@@ -58,7 +58,7 @@
     <ul class="navbar-nav ml-auto">
       {% if not request.user.is_staff %}
       <li class="nav-item">
-        <a class="nav-link" href="{% url 'login' %}"><i class="fas fa-home"></i> Home</a>
+        <a class="nav-link" href="{% url 'home' %}"><i class="fas fa-home"></i> Home</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="{% url 'about' %}"><i class="far fa-address-card"></i> About Us</a>
@@ -66,10 +66,18 @@
       <li class="nav-item">
         <a class="nav-link" href="{% url 'contact' %}"><i class="fas fa-phone-square"></i> Contact</a>
       </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Login</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="{% url 'login' %}">Admin Login</a>
+          <a class="dropdown-item" href="#">Patient Login</a>
+          <a class="dropdown-item" href="#">Receiptionist Login</a>
+        </div>
+      </li>
       {% endif %}
       {% if request.user.is_staff %}
       <li class="nav-item">
-        <a class="nav-link" href="{% url 'home' %}"><i class="fas fa-home"></i> Home</a>
+        <a class="nav-link" href="{% url 'index' %}"><i class="fas fa-home"></i> Dashboard</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Doctor</a>
